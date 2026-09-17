@@ -78,4 +78,5 @@ Este projeto foi desenvolvido como desafio de front-end para consumir dados exte
 ## Autor
 
 Vitor da Rosa
+Links:
 [GitHub](https://github.com/vturose)
