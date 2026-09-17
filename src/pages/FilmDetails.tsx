@@ -38,15 +38,30 @@ export function FilmDetails() {
   }
 
   return (
-    <div>
-      <img src={film.movie_banner} alt={film.title} />
-      <h1>{film.title}</h1>
-      <p>{film.description}</p>
-      <p>Diretor: {film.director}</p>
-      <p>Produtor: {film.producer}</p>
-      <p>Ano de lançamento: {film.release_date}</p>
-      <p>Nota (Rotten Tomatoes): {film.rt_score}</p>
-      <Link to="/">Voltar</Link>
+    <div className="max-w-4xl mx-auto p-3">
+      <div className="flex flex-col md:flex-row gap-6">
+        <img className="border border-black rounded-lg w-full md:w-80 md:shrink-0 object-cover" src={film.movie_banner} alt={film.title} />
+
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold">{film.title}</h1>
+          <p className="text-gray-700 leading-relaxed italic">{film.description}</p>
+          <p>
+            <span className="font-semibold">Director:</span> {film.director}
+          </p>
+          <p>
+            <span className="font-semibold">Producer:</span> {film.producer}
+          </p>
+          <p>
+            <span className="font-semibold">Release Date:</span> {film.release_date}
+          </p>
+          <p>
+            <span className="font-semibold">Rotten Tomatoes Score:</span> {film.rt_score}
+          </p>
+          <Link to="/" className="inline-block w-fit bg-blue-500 text-white py-1 px-4 rounded hover:bg-blue-600">
+            Back
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

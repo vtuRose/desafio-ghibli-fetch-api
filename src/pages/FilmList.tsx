@@ -28,7 +28,7 @@ export function FilmList() {
   }, []);
 
   if (loading) {
-    return <p>Carregando filmes...</p>;
+    return <p>Loading films...</p>;
   }
 
   if (error) {
@@ -36,7 +36,7 @@ export function FilmList() {
   }
 
   return (
-    <div>
+    <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-4 p-4">
       {films.map((film) => (
         <FilmCard key={film.id} film={film} />
       ))}
