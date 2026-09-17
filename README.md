@@ -18,6 +18,7 @@ Aplicação em React para consultar e visualizar filmes do Studio Ghibli atravé
 - TypeScript
 - Vite
 - React Router DOM
+- Tailwind CSS
 
 ## Pré-requisitos
 
@@ -60,6 +61,8 @@ src/
   types/
 ```
 
+Componentes e páginas ficam em arquivos únicos (ex: `FilmCard.tsx`), sem subpastas com `index.tsx` — evita ambiguidade ao abrir várias abas com o mesmo nome de arquivo no editor.
+
 ## API utilizada
 
 A aplicação consome a API pública:
@@ -71,3 +74,8 @@ https://ghibliapi.vercel.app/films
 ## Observação
 
 Este projeto foi desenvolvido como desafio de front-end para consumir dados externos e praticar rotas, renderização e integração com APIs.
+
+## Autor
+
+Vitor da Rosa
+[GitHub](https://github.com/vturose)
