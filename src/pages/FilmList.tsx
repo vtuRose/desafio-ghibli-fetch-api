@@ -32,7 +32,7 @@ export function FilmList() {
   }
 
   if (error) {
-    return <p>{error}</p>;
+    return <p className="text-error p-4">{error}</p>;
   }
 
   return (

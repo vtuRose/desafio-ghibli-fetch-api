@@ -7,4 +7,5 @@ export type Film = {
   release_date: string;
   rt_score: string;
   movie_banner: string;
+  image: string;
 };
