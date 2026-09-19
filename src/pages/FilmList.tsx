@@ -38,20 +38,15 @@ export function FilmList() {
 
   return (
     <div className="max-w-6xl mx-auto p-4">
-      <h1 className="text-2xl font-bold text-text-primary mb-6">Ghibli Film Explorer</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4">
         {visibleFilms.map((film) => (
           <FilmCard key={film.id} film={film} />
         ))}
 
         {hasMore && (
-          <button
-            onClick={() => setVisibleCount((prev) => prev + 10)}
-            className="aspect-[2/3] flex items-center justify-center bg-surface border border-border rounded-lg hover:bg-surface-hover transition-colors"
-          >
-            <span className="w-12 h-12 flex items-center justify-center rounded-full bg-accent text-white text-2xl hover:bg-accent-hover transition-colors">
-              +
-            </span>
+          <button onClick={() => setVisibleCount((prev) => prev + 10)} className="aspect-2/3 flex flex-col items-center justify-center gap-2 bg-surface border border-border rounded-lg hover:bg-surface-hover transition-colors">
+            <span className="w-12 h-12 flex items-center justify-center rounded-full bg-accent text-white text-2xl hover:bg-accent-hover transition-colors">+</span>
+            <span className="text-text-secondary text-sm">More films</span>
           </button>
         )}
       </div>

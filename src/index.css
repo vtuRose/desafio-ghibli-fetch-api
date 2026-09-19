@@ -10,6 +10,7 @@
   --color-text-secondary: #a3a3a3;
   --color-border: #333333;
   --color-error: #e5484d;
+  --color-toggle: #00008b;
 }
 
 [data-theme="light"] {
@@ -22,6 +23,7 @@
   --color-text-secondary: #6b6b6b;
   --color-border: #e0dcd3;
   --color-error: #c9302c;
+  --color-toggle: #1f1f2e;
 }
 
 body {
