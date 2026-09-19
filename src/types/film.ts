@@ -5,6 +5,7 @@ export type Film = {
   director: string;
   producer: string;
   release_date: string;
+  running_time: string;
   rt_score: string;
   movie_banner: string;
   image: string;

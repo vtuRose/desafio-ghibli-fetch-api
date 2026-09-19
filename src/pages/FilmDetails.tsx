@@ -39,7 +39,7 @@ export function FilmDetails() {
   }
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-[calc(100vh-4rem)]">
       <div className="fixed inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(${film.movie_banner})` }} />
 
       <div className="fixed inset-0 bg-black/60 z-0" />
@@ -49,7 +49,7 @@ export function FilmDetails() {
           <div className="flex flex-col md:flex-row gap-6">
             <img className="border border-border rounded-lg w-full md:w-80 md:shrink-0 object-cover" src={film.image} alt={film.title} />
 
-            <div className="space-y-2">
+            <div className="space-y-1">
               <h1 className="text-3xl font-bold font-heading text-text-primary">{film.title}</h1>
               <p className="text-text-secondary leading-relaxed italic">{film.description}</p>
               <p className="text-text-primary">
@@ -63,6 +63,9 @@ export function FilmDetails() {
               </p>
               <p className="text-text-primary">
                 <span className="font-semibold">Rotten Tomatoes Score:</span> {film.rt_score}
+              </p>
+              <p className="text-text-primary">
+                <span className="font-semibold">Running Time:</span> {film.running_time} min
               </p>
             </div>
           </div>
