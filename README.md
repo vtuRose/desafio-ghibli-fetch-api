@@ -1,4 +1,4 @@
-# Ghibli Studios Film Explorer
+# Ghibli Film Explorer
 
 Aplicação em React para consultar e visualizar filmes do Studio Ghibli através da API pública do projeto Ghibli API.
 
@@ -8,7 +8,7 @@ Aplicação em React para consultar e visualizar filmes do Studio Ghibli atravé
 
 - Listagem dos filmes em ordem alfabética, com paginação incremental ("carregar mais")
 - Navegação para os detalhes de cada filme, com fundo ilustrado pelo banner do filme
-- Exibição de diretor, produtor, data de lançamento e nota Rotten Tomatoes
+- Exibição de diretor, produtor, data de lançamento, duração e nota Rotten Tomatoes
 - Tema claro/escuro com alternância animada e preferência salva entre visitas
 - Header fixo com navegação sempre acessível
 - Interface responsiva, do celular ao desktop
@@ -20,6 +20,7 @@ Aplicação em React para consultar e visualizar filmes do Studio Ghibli atravé
 - Vite
 - React Router DOM (HashRouter)
 - Tailwind CSS v4
+- Google Fonts (Baloo 2 + Nunito)
 - oxlint
 
 ## Pré-requisitos
@@ -89,6 +90,7 @@ https://ghibliapi.vercel.app/films
 - O serviço de API (`services/ghibliApi.ts`) lança erros em vez de tratá-los internamente — cada componente decide como reagir (mensagem de erro, estado de loading), mantendo a lógica de requisição desacoplada da apresentação.
 - As cores do tema são definidas como variáveis CSS (`@theme` do Tailwind v4), sobrescritas por um atributo `data-theme` no `<html>` — permite trocar o tema inteiro sem alterar nenhuma classe nos componentes.
 - A paginação da lista de filmes é feita inteiramente no cliente: a API devolve todos os filmes numa única chamada, e um estado local controla quantos são exibidos por vez.
+- A tipografia separa uma fonte de destaque (Baloo 2) para títulos de uma fonte de leitura (Nunito) para o corpo do texto.
 
 ## Observação
 
