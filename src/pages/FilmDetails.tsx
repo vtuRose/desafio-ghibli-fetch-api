@@ -21,6 +21,7 @@ export function FilmDetails() {
         const data = await fetchFilmById(id);
         setFilm(data);
       } catch (err) {
+        console.error(err);
         setError("Failed to fetch film details. Please try again later.");
       } finally {
         setLoading(false);

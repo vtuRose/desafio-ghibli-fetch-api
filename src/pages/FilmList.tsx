@@ -16,7 +16,8 @@ export function FilmList() {
         const data = await fetchFilms();
         const sorted = [...data].sort((a, b) => a.title.localeCompare(b.title));
         setAllFilms(sorted);
-      } catch (error) {
+      } catch (err) {
+        console.error(err)
         setError("Failed to fetch films. Please try again later.");
       } finally {
         setLoading(false);
