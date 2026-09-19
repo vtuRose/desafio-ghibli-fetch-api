@@ -1,6 +1,6 @@
 # Ghibli Studios Film Explorer
 
-Aplicação em React para consultar e visualizar filmes da Ghibli Studios através da API pública do projeto Ghibli API.
+Aplicação em React para consultar e visualizar filmes da Ghibli Studios através da API pública do Ghibli API.
 
 ![Amostra do site](src/assets/ghibli-demo.gif)
 
