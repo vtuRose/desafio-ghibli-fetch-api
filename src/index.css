@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --font-heading: "Baloo 2", sans-serif;
+  --font-sans: "Nunito", sans-serif;
+
   --color-background: #141414;
   --color-surface: #1f1f1f;
   --color-surface-hover: #292929;
@@ -17,7 +20,7 @@
   --color-background: #faf8f3;
   --color-surface: #ffffff;
   --color-surface-hover: #f1ede4;
-  --color-accent: #0099FF;
+  --color-accent: #0099ff;
   --color-accent-hover: #aaddff;
   --color-text-primary: #242424;
   --color-text-secondary: #6b6b6b;
@@ -28,4 +31,5 @@
 
 body {
   background-color: var(--color-background);
+  font-family: var(--font-sans);
 }

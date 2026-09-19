@@ -50,7 +50,7 @@ export function FilmDetails() {
             <img className="border border-border rounded-lg w-full md:w-80 md:shrink-0 object-cover" src={film.image} alt={film.title} />
 
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold text-text-primary">{film.title}</h1>
+              <h1 className="text-3xl font-bold font-heading text-text-primary">{film.title}</h1>
               <p className="text-text-secondary leading-relaxed italic">{film.description}</p>
               <p className="text-text-primary">
                 <span className="font-semibold">Director:</span> {film.director}
